@@ -14,7 +14,6 @@ def open_file(fname='overview.h5'):
     
     
 def write_value(value, value_path, h5_file):
-    
     stampname, device, value_name =  value_path.split('/')
     if stampname in h5_file.keys():
         grp = h5_file[stampname]

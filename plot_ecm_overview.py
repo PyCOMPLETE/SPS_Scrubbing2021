@@ -5,6 +5,16 @@ import pickle
 import datetime
 import sys
 
+# plot from pkl file w structure
+# pkl files are in the folders "ECM/SPS.USER.MD2 or MD5"
+# called overview_ecm_**username**_from_h5.pkl
+# the stucture in the file is as follows:
+# tot_dict['cycleStamps'] = cycleStamps_list
+# tot_dict['integrated_intensity'] = integrated_intensity_list
+# tot_dict['max_intensity'] = max_intensity_list
+# tot_dict[device] = {'sem2DRaw': sem2DRaw_list(h5_name, device, cycleStamp_list_str), 
+#                     'totalGain': totalGain_list(h5_name, device, cycleStamp_list_str),
+#                     'measStamp': measStamp_list(h5_name, device, cycleStamp_list_str)}
 
 ##TO DO
 #choose device
