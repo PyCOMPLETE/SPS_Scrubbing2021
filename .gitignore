@@ -1,0 +1,5 @@
+data_nxcals/
+data_pyjapcscout/
+ecm/
+*.parquet
+*.h5
